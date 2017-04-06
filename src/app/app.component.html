@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="nav nav-pills">
+        <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Projects</a></li>
+        <li role="presentation" routerLinkActive="active"><a routerLink="/users">Users</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--overflow helps that all elements are contained inside of it-->
+  <div class="row" style="overflow: hidden">
+    <div class="col-xs-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
